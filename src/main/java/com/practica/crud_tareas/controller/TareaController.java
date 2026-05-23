@@ -10,7 +10,7 @@ import java.util.List;
 @RequestMapping("/api/tareas")
 public class TareaController {
 
-    private final TareaService service;
+    private TareaService service;
 
     public TareaController(TareaService service) {
         this.service = service;
@@ -26,14 +26,11 @@ public class TareaController {
         return service.obtenerTodas();
     }
 
-    // Al quitar ResponseEntity, devolvemos la Tarea directa.
-    // Si no existe, usamos .orElse(null) para que regrese un JSON vacío.
     @GetMapping("/{id}")
     public Tarea obtenerPorId(@PathVariable Long id) {
         return service.obtenerPorId(id).orElse(null);
     }
 
-    // Actualiza y devuelve la tarea actualizada directa, o null si no existía.
     @PutMapping("/{id}")
     public Tarea actualizarTarea(@PathVariable Long id, @RequestBody Tarea detalles) {
         return service.obtenerPorId(id).map(existente -> {
@@ -44,7 +41,6 @@ public class TareaController {
         }).orElse(null);
     }
 
-    // El método se vuelve 'void' (no regresa nada, solo borra).
     @DeleteMapping("/{id}")
     public void eliminarTarea(@PathVariable Long id) {
         if (service.obtenerPorId(id).isPresent()) {
