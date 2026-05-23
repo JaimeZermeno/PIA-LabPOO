@@ -122,17 +122,8 @@ Crear la base de datos en MySQL:
 > Invoke-RestMethod -Uri \"http://localhost:8080/api/tareas/1\" -Method
 > Delete
 
-# 6. Subir al repositorio
 
--   Crear repositorio en GitHub / GitLab / Bitbucket
-
--   git init → git remote add origin \<URL\>
-
--   git add . → git commit -m \"feat: crud tareas spring boot\"
-
--   git push -u origin main
-
-# 7. Conclusiones
+# 6. Conclusiones
 
 -   Usar Spring Boot nos ahorra tener que configurar todo a mano. El
     servidor (Tomcat) ya viene incluido, así que con solo correr el
