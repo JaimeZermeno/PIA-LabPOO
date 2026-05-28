@@ -89,17 +89,17 @@ Crear la base de datos en MySQL:
 
 ## Listar todas
 
-> Invoke-RestMethod -Uri \"http://localhost:8080/api/tareas\" -Method
+> Invoke-RestMethod -Uri \"http://localhost:8080/api/tareas" -Method
 > Get
 
 ## Obtener por ID
 
-> Invoke-RestMethod -Uri \"http://localhost:8080/api/tareas/1\" -Method
+> Invoke-RestMethod -Uri \"http://localhost:8080/api/tareas/1" -Method
 > Get
 
 ## Crear
 
-> Invoke-RestMethod -Uri \"http://localhost:8080/api/tareas\" -Method
+> Invoke-RestMethod -Uri \"http://localhost:8080/api/tareas" -Method
 > Post \`
 >
 > -ContentType \"application/json\" \`
@@ -109,7 +109,7 @@ Crear la base de datos en MySQL:
 
 ## Actualizar
 
-> Invoke-RestMethod -Uri \"http://localhost:8080/api/tareas/1\" -Method
+> Invoke-RestMethod -Uri \"http://localhost:8080/api/tareas/1" -Method
 > Put \`
 >
 > -ContentType \"application/json\" \`
@@ -119,7 +119,7 @@ Crear la base de datos en MySQL:
 
 ## Eliminar
 
-> Invoke-RestMethod -Uri \"http://localhost:8080/api/tareas/1\" -Method
+> Invoke-RestMethod -Uri \"http://localhost:8080/api/tareas/1" -Method
 > Delete
 
 
