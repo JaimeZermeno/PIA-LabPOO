@@ -57,8 +57,6 @@ Crear la base de datos en MySQL:
 >
 > spring.datasource.url=jdbc:mysql://localhost:3306/practica_web
 >
-> ?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
->
 > spring.datasource.username=\_\_\_\_\_
 >
 > spring.datasource.password=\_\_\_\_\_\_
